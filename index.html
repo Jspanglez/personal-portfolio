@@ -37,17 +37,17 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repudiandae natus reiciendis molestias ratione recusandae, cumque omnis modi similique totam ipsam qui aperiam dolorem aspernatur, impedit praesentium reprehenderit voluptate officia!</p>
 
 				<div class="tab-titles">
-					<p class="tab-links active-link">Skills</p>
-					<p class="tab-links">Education</p>
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
 				</div>
-				<div class="tab-contents">
+				<div class="tab-contents active-tab" id="skills">
 					<ul>
 						<li><span>Skill 1</span><br>Info on Skill 1</li>
 						<li><span>Skill 2</span><br>Info on Skill 2</li>
 						<li><span>Skill 3</span><br>Info on Skill 3</li>
 					</ul>
 				</div>
-				<div class="tab-contents">
+				<div class="tab-contents" id="education">
 					<ul>
 						<li><span>2020 - 2023</span><br>Info on degree and course</li>
 					</ul>
