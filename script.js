@@ -47,7 +47,7 @@ fetch('https://api.github.com/users/Jspanglez/repos', {
           <br>
           <p>Stars: ${repo.stargazers_count}</p>
           <br>
-          <p><a href="${repo.html_url}" target="_blank">Go to repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+          <p><a href="${repo.html_url}" target="_blank">Go to repository <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></p>
           <br>
       `;
 
