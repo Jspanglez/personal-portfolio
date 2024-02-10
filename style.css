@@ -210,3 +210,92 @@ nav ul li a:hover::after {
 	background: #051d4d;
 	transform: translateY(-10px);
 }
+
+/* ---------- Contact ---------- */
+
+#contact {
+	margin-top: 80px;
+}
+
+.contact-left {
+	flex-basis: 35%;
+}
+
+.contact-right {
+	flex-basis: 60%;
+}
+
+.contact-left p {
+	margin-top: 30px;
+}
+
+.contact-left p i {
+	color: #FFC900;
+	margin-right: 15px;
+	font-size: 25px;
+}
+
+.social-icons {
+	margin-top: 30px;
+}
+
+.social-icons a {
+	text-decoration: none;
+	font-size: 30px;
+	margin-right: 15px;
+	color: #ababab;
+	display: inline-block;
+	transition: transform 0.5s, color 0.5s;
+}
+
+.social-icons a:hover {
+	/* color: #FFC900; */
+	color: #0091ff;
+	transform: translateY(-5px);
+}
+
+.btn {
+	display: inline-block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid #FFC900;
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	background: #FFC900;
+}
+
+.btn.btn2 {
+	background: #FFC900;
+	cursor: pointer;
+	padding: 14px 60px;
+	font-size: 22px;
+	margin-top: 20px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn.btn2:hover {
+	box-shadow: 0 0 10px 5px rgba(255, 221, 0, 0.5);
+}
+
+.contact-right form {
+	width: 100%;
+}
+
+form input, form textarea {
+	width: 100%;
+	border: 0;
+	outline: none;
+	background: #262626;
+	padding: 15px;
+	margin: 15px 0;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 6px;
+}
