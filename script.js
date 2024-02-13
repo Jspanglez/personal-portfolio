@@ -44,6 +44,39 @@ window.addEventListener('scroll', function() {
     }
   }
 });
+  
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzpk7Qz3PHcHlFrZlIZrLJZZV8WcYkkmCaV-SxHHkq_5iRsawxu_MnAcvanhUvQ9dBG/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+
+  const submitButton = document.querySelector('.btn2');
+  const loadingIcon = document.getElementById('loadingIcon');
+  submitButton.style.display = 'none';
+  loadingIcon.style.display = 'inline-block';
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = "Message sent successfully"
+      msg.style.opacity = 1;
+      setTimeout(function() {
+        msg.style.opacity = 0;
+        setTimeout(function() {
+          msg.innerHTML = "‎"
+        }, 3000)
+      },3000)
+      form.reset()
+      submitButton.style.display = 'inline-block';
+      loadingIcon.style.display = 'none';
+    })
+    .catch(error => {
+      console.error('Error!', error.message)
+      submitButton.style.display = 'inline-block';
+      loadingIcon.style.display = 'none';
+    })
+})
 
 fetch('https://api.github.com/users/Jspanglez/repos', {
   headers: {
