@@ -25,6 +25,26 @@ function closeMenu() {
   menu.style.right = "-175px";
 }
 
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('header');
+  const nav = document.querySelector('nav');
+  const headerHeight = header.offsetHeight;
+
+  if (window.innerWidth > 600) {
+    if (window.scrollY> headerHeight) {
+      nav.classList.add('nav-sticky');
+      nav.style.top = "0%";
+    } else {
+      if (nav.classList.contains('nav-sticky')) {
+        nav.style.top = "-100%";
+        setTimeout(() => {
+          nav.classList.remove('nav-sticky');
+        },100)
+      }
+    }
+  }
+});
+
 fetch('https://api.github.com/users/Jspanglez/repos', {
   headers: {
     Authorization: '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',
