@@ -42,6 +42,13 @@ nav {
 	top: -100%;
 	transition: top 0.5s ease;
 }
+
+.nav-sticky {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+	transition: top 0.5s ease;
 }
 
 .logo {
