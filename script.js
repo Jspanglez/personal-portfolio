@@ -15,6 +15,16 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab")
 }
 
+let menu = document.getElementById("myMenu");
+
+function openMenu() {
+  menu.style.right = "0";
+}
+
+function closeMenu() {
+  menu.style.right = "-175px";
+}
+
 fetch('https://api.github.com/users/Jspanglez/repos', {
   headers: {
     Authorization: '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',
