@@ -35,6 +35,13 @@ nav {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	cursor: default;
+	background-color: rgba(8, 8, 8, 0.7);
+	backdrop-filter: blur(10px);
+	margin: -10px -155px;
+	padding: 10px 155px;
+	top: -100%;
+	transition: top 0.5s ease;
+}
 }
 
 .logo {
