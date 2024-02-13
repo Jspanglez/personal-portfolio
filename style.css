@@ -308,6 +308,16 @@ nav ul li a:hover::after {
 	box-shadow: 0 0 10px 5px rgba(255, 221, 0, 0.5);
 }
 
+#loadingIcon {
+	display: none;
+	font-size: 36px;
+	padding: 14px 0;
+	margin-top: 20px;
+	margin-left: 48%;
+	margin-bottom: 20px;
+	color: #ffc200;
+}
+
 .contact-right form {
 	width: 100%;
 }
