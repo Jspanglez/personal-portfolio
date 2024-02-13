@@ -6,10 +6,18 @@
 	font-family: 'Poppins', sans-serif;
 	box-sizing: border-box;
 }
+
+html {
+	scroll-behavior: smooth;
+}
   
 body {
 	background: #080808;
 	color: #fff;
+}
+
+html, body {
+	overflow-x: hidden;
 }
 
 #header {
@@ -53,8 +61,8 @@ nav {
 
 .logo {
 	width: 140px;
-	top: 15px;
 	position: relative;
+	top: 5px;
 }
 
 nav ul li {
@@ -106,6 +114,8 @@ nav ul li a:hover::after {
 #about {
 	padding: 80px 0;
 	color: #ababab;
+	background:
+	linear-gradient(to bottom, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0));
 }
 
 .row {
@@ -196,7 +206,7 @@ nav ul li a:hover::after {
 /* ---------- GitHub ---------- */
 
 #github {
-	padding: 30px 0;
+	padding: 60px 0;
 }
 
 #repos {
@@ -238,7 +248,8 @@ nav ul li a:hover::after {
 /* ---------- Contact ---------- */
 
 #contact {
-	margin-top: 80px;
+	padding: 70px 0 0;
+	/* margin-top: 20px; */
 }
 
 .contact-left {
@@ -295,12 +306,13 @@ nav ul li a:hover::after {
 }
 
 .btn.btn2 {
-	background: #FFC900;
+	background: #ffc200;
 	cursor: pointer;
 	padding: 14px 60px;
 	font-size: 22px;
 	margin-top: 20px;
 	margin-left: 50%;
+	margin-bottom: 20px;
 	transform: translateX(-50%);
 }
 
@@ -340,6 +352,9 @@ form input, form textarea {
 	padding: 25px 0;
 	background: #262626;
 	font-weight: 300;
+	/* margin-top: 20px; */
+}
+
 /* ---------- Mobile Device Styles ---------- */
 
 nav .fas {
