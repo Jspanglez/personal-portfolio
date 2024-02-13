@@ -17,10 +17,12 @@ body {
 	height: 100vh;
 	/* background-image: url(images/background.png); */
 	background-image: linear-gradient(to right, rgb(0, 0, 0, 1) 40%, 
-									rgba(0, 0, 0, 0)),
-										url(images/js.png);
+					rgba(0, 0, 0, 0)),
+					  linear-gradient(to top, rgb(0, 0, 0) 1%, 
+					rgba(0, 0, 0, 0)),
+					  url(images/js.png);
 	background-size: cover;
-	/* background-position: center; */
+	background-position: center;
 }
 
 .container {
