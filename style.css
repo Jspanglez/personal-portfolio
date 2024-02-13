@@ -340,6 +340,116 @@ form input, form textarea {
 	padding: 25px 0;
 	background: #262626;
 	font-weight: 300;
+/* ---------- Mobile Device Styles ---------- */
+
+nav .fas {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#header {
+		background-image: 
+		linear-gradient(to top, rgb(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.4)),
+		url(images/js_mobile.png);
+	}
+
+	.header-text {
+		margin-top: 125%;
+		font-size: 16px;
+	}
+
+	.header-text h1 {
+		font-size: 30px;
+	}
+
+	.logo {
+		top: 5px;
+		left: -130px;
+	}
+
+	nav .fas {
+		display: block;
+		font-size: 25px;
+		margin-right: -120px;
+		margin-top: 10px;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		background-size: cover;
+		left: 155px;
+		z-index: 2;
+		width: 100%;
+	}
+
+	nav ul {
+		background: #484848;
+		top: 0;
+		position: fixed;
+		right: -600px;
+		width: 175px;
+		margin-right: -25px;
+		height: 110vh;
+		padding-top: 50px;
+		transition: right 0.5s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 25px;
+	}
+
+	nav ul .fas {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+	}
+
+	.sub-title {
+		font-size: 40px;
+	}
+
+	.about-col-1, .about-col-2 {
+		flex-basis: 100%;
+	}
+
+	.about-col-1 {
+		margin-bottom: 30px;
+	}
+
+	.about-col-2 {
+		font-size: 14px;
+	}
+
+	.tab-links {
+		font-size: 16px;
+		margin-right: 20px;
+	}
+
+	.contact-left, .contact-right {
+		flex-basis: 100%;
+	}
+
+	.btn {
+		margin-left: 50%;
+		transform: translateX(-50%);
+		padding: 14px 20px;
+		font-size: 12px;
+	}
+
+	#msg {
+		width: 300px;
+		
+	}
+
+	.copyright {
+		font-size: 14px;
+	}
+}
+
 #msg {
 	color: #26ff00;
 	display: block;
