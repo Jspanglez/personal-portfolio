@@ -12,12 +12,14 @@
 	<div class="container">
 		<nav>
 			<img src="images/logo.png" class="logo">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">GitHub</a></li>
-				<li><a href="#">Contact</a></li>
+			<ul id="myMenu">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#github">GitHub</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<i class="fas fa-xmark" onclick="closeMenu()"></i>
 			</ul>
+			<i class="fas fa-bars" onclick="openMenu()"></i>
 		</nav>
 		<div class="header-text">
 			<p>De Montford University Graduate</p>
