@@ -340,5 +340,11 @@ form input, form textarea {
 	padding: 25px 0;
 	background: #262626;
 	font-weight: 300;
-	margin-top: 20px;
+#msg {
+	color: #26ff00;
+	display: block;
+	opacity: 0;
+	transition: opacity 3s ease-in-out;
+	margin-left: 53%;
+	transform: translateX(-35%);
 }
