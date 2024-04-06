@@ -386,7 +386,7 @@ nav .fas {
 	}
 
 	.header-text {
-		margin-top: 125%;
+		margin-top: 150%;
 		font-size: 16px;
 	}
 
@@ -453,6 +453,10 @@ nav .fas {
 
 	.about-col-2 {
 		font-size: 14px;
+	}
+
+	.about-col-1 img {
+		z-index: 0;
 	}
 
 	.tab-links {
