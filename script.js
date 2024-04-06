@@ -44,6 +44,34 @@ window.addEventListener('scroll', function() {
     }
   }
 });
+
+const DK = document.getElementById("DK")
+
+function enlargeImg() {
+
+  if (window.innerWidth > 600) {
+    if (DK.classList.contains('enlarged')) {
+      DK.style.transform = "none";
+      DK.style.transition = "transform 0.25s ease";
+      DK.style.border = "";
+      DK.style.cursor = "zoom-in"
+      DK.classList.remove('enlarged');
+    } else {
+        DK.style.transform = "translate(95%, 70%) scale(3)";
+        DK.style.transition = "transform 0.25s ease";
+        DK.style.border = "none";
+        DK.style.cursor = "zoom-out"
+        DK.classList.add('enlarged');
+      }
+  }
+}
+
+window.addEventListener('scroll', function() {
+  DK.style.transform = "none";
+  DK.style.transition = "transform 0.25s ease";
+  DK.style.border = "";
+  DK.classList.remove('enlarged');
+});
   
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzpk7Qz3PHcHlFrZlIZrLJZZV8WcYkkmCaV-SxHHkq_5iRsawxu_MnAcvanhUvQ9dBG/exec'
 const form = document.forms['submit-to-google-sheet']
