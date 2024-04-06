@@ -141,8 +141,23 @@ nav ul li a:hover::after {
 }  
 
 .about-col-1 img {
+	position: relative;
 	width: 100%;
-	border-radius: 15px;
+	margin-top: 25px;
+	cursor: zoom-in;
+	/* border: #ffc200;
+	border-style: solid;
+	border-image-width: 200px;
+	border-radius: 15px; */
+	padding: 10px;
+	z-index: 2;
+}
+
+figcaption {
+	color: #fff;
+	padding: 0 70px;
+	font-size: smaller;
+	text-align: center;
 }
 
 .about-col-2 {
